@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom en Liesbeth</title>
+
+  <script src="./sakura-min.js"></script>
+  <link rel="stylesheet" href="./sakura-min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #D6EFC7;
+      --prim-color: #184D47;
+      --sec-color: #656bad;
+      --tert-color: #FAD586;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    body {
+      background-color: #FAD586;
+      background-image: linear-gradient(315deg, #FAD586 0%, #D6EFC7 74%);
+    }
+
+    h1 {
+      font-family: "Satisfy", cursive;
+      font-weight: 700;
+      font-style: normal;
+      font-size: xx-large;
+      color: var(--prim-color);
+      margin-top: 20vh;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    hr {
+      margin: 32px 0;
+      width: 40px;
+      border-style: dotted none none;
+      border-width: 7px;
+      border-color: var(--prim-color);
+      opacity: 0.5;
+    }
+
+    span {
+      display: block;
+      height: 20px;
+    }
+
+    h2 {
+      font-family: "Satisfy", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: large;
+      color: var(--prim-color);
+      text-align: center;
+      margin: 0;
+    }
+
+    h3 {
+      font-family: "Satisfy", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: large;
+      color: var(--prim-color);
+      text-align: center;
+      margin-top: 24px;
+      margin: 0;
+    }
+
+    a {
+      color: var(--sec-color);
+      text-decoration: none;
+      transition: text-decoration 0.3s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    div {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 35%;
+      height: auto;
+      aspect-ratio: 1;
+    }
+
+    @media (max-width: 600px) {
+      img {
+        width: 40%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Bedankt om erbij te zijn!</h1>
+
+  <hr>
+
+  <span></span>
+
+  <h2>Plant deze zaadjes tussen april en juni.</h2>
+  <h2>Druk zachtjes aan en bedek met een dun laagje aarde van 1cm.</h2>
+  <h2>Na twee maanden komen de eerste bloemen, van de zomer tot de eerste nachtvorst.</h2>
+  <h2>Volgend jaar verschijnen de bloemen opnieuw!</h2>
+
+  <hr>
+
+  <h3>Nog mooie foto's?</h3>
+  <h3>Je <a href="https://1drv.ms/f/s!AtDIIgxd3fxZiKs8a-cp8j8LxIUuzQ?e=t7Qb0u" target="_blank">kan ze hier uploaden</a>
+    om ze met ons te delen</h3>
+
+
+  <div>
+    <img src="./cuties.jpg">
+  </div>
+
+
+
+
+
+  <script>
+    var sakura = new Sakura('body', {
+      maxSize: 20,
+      colors: [
+        {
+          gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+          gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+          gradientColorDegree: 120,
+        },
+        {
+          gradientColorStart: 'rgba(255, 203, 201, 0.9)',
+          gradientColorEnd: 'rgba(250, 193, 191, 0.9)',
+          gradientColorDegree: 120,
+        },
+      ],
+    });
+  </script>
+</body>
+
+</html>
